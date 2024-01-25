@@ -1,9 +1,19 @@
 ﻿namespace ProvaPub.Models
 {
-	public class Product
+	public class Product 
 	{
-		public int Id { get; set; }	
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public Product(int id, string name) 
+        {
+            Id = id;
+            Name = name;
+        }
+        public Product()
+        {
+            
+        }
 
-		public string Name { get; set; }
-	}
+
+    }
 }

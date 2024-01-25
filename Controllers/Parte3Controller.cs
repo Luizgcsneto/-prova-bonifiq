@@ -24,11 +24,11 @@ namespace ProvaPub.Controllers
             switch (paymentMethod)
             {
                 case PaymentMethod.Pix:
-                    return await Task.FromResult(new Order() { Name = "Pagamento pix", Value = paymentValue });
+                    return await Task.FromResult(new Order() { Name = "Pagamento pix", Value = paymentValue, CustomerId = customerId });
                 case PaymentMethod.Creditcar:
-                    return await Task.FromResult(new Order() { Name = "Pagamento Cartão de crédito", Value = paymentValue });
+                    return await Task.FromResult(new Order() { Name = "Pagamento Cartão de crédito", Value = paymentValue, CustomerId = customerId });
                 case PaymentMethod.Paypal:
-                    return await Task.FromResult(new Order() { Name = "Pagamento Cartão de Paypal", Value = paymentValue });
+                    return await Task.FromResult(new Order() { Name = "Pagamento Cartão de Paypal", Value = paymentValue, CustomerId = customerId });
                 default:
                     throw new NotImplementedException();
 

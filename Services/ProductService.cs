@@ -15,7 +15,7 @@ namespace ProvaPub.Services
 
         public ProductList ListProducts(int page)
         {
-            return new ProductList() { HasNext = false, TotalCount = 10, Products = _ctx.Products.Skip(--page * 10).Take(10).ToList() };
+            return new ProductList() { Products = _ctx.Products.Skip(--page * 10).Take(10).ToList() };
         }
 
     }

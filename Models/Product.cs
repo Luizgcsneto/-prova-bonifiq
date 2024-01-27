@@ -1,13 +1,12 @@
 ﻿namespace ProvaPub.Models
 {
-	public class Product 
-	{
-        public int Id { get; set; }
-        public string Name { get; set; }
+	public class Product : BaseCommunity
+    {
+
         public Product(int id, string name) 
         {
-            Id = id;
-            Name = name;
+            this.Id = id;
+            this.Name = name;
         }
         public Product()
         {

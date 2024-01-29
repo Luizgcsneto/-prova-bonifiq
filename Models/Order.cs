@@ -16,7 +16,7 @@
         }
         public Order()
         {
-            
+            this.OrderDate = DateTime.Now;
         }
     }
 }

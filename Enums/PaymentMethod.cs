@@ -2,7 +2,7 @@
 {
     public enum PaymentMethod
     {
-        Pix,
+        Pix = 1,
         Creditcar,
         Paypal
     }

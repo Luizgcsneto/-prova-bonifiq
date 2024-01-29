@@ -14,7 +14,7 @@ namespace ProvaPub.Services
             {
                 Value = paymentValue,
                 CustomerId = customerId
-            });
+            });;
         }
     }
 }
